@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="style.css">
+       <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+       <div class="main">
+       <div class="container">
+              <div class="timer">
+                     <div id="sec"> <p class="rem" id="hrem">0</p><p id="hour" class="num"></p>   </div>
+                     <span>:</span>
+
+                     <div id="sec"> <p class="rem" id="mrem">0</p>
+                            <p id="minute" class="num"></p>  </div>
+                     <span>:</span>
+
+                     <div id="sec"> <p class="rem" id="srem">0</p>
+                            <p id="second" class="num"></p>  </div>
+                     <span>:</span>
+
+                     <div id="sec">  <p class="rem" id="msrem">0</p> 
+                            <p id="milisecond" class="num"></p>  </div>
+              </div>
+              <div class="btns">
+                     <button id="play"><i class="ri-play-fill"></i></button>
+                     <button id="flag"><i class="ri-flag-line"></i></button>
+                     <button id="pause"><i class="ri-pause-line"></i></button>
+                     <button id="reset"><i class="ri-restart-line"></i></button>
+              </div>
+              
+       </div>
+       <div class="flagNav">
+              <p>Lap</p>
+              <p>Overall Time</p>
+       </div>
+       <div class="flagSection">
+                     <!-- <div class="item">
+                            <p id="count">${count}</p>
+                            <div class="times">
+                                  <p id="Hour">${hour.innerHTML}</p>
+                                  <p id="Minute">${minute.innerHTML}</p>
+                                  <p id="Second">${second.innerHTML}</p>
+                                  <p id="milisecond">${ms.innerHTML}</p>
+                            </div>
+                     </div> -->
+              </div>
+       </div>
+       <script src="script.js"></script>
+</body>
+</html>
