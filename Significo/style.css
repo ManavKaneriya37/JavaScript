@@ -1,0 +1,102 @@
+:root{
+      --salmon: #EF9D71;
+      --black: #000;
+      --white: #fff;
+      --cyan: #AEDEE0;
+      --dsalmon: #532521;
+      --dcyan: #1F2F32;
+}
+
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+html,body{
+      height: 100%;
+      width: 100%;
+}
+@font-face {
+      font-family: Neue;
+      src: url('./Neue.ttf');
+}
+*::selection{
+      background-color: var(--salmon);
+      color: var(--white);
+}
+body[theme="black"]{
+      background-color: var(--black);
+}
+body[theme="black"] .section{
+      color: var(--white);
+}
+body[theme="white"]{
+      background: var(--white);
+}
+body[theme="white"] .section{
+      color: var(--black);
+}
+body[theme="salmon"]{
+      background: var(--salmon);
+}
+body[theme="salmon"] .section{
+      color: var(--dsalmon);
+}
+body[theme="cyan"]{
+      background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+      color: var(--dcyan);
+}
+.marquee{
+      /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      scale: 1; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+.heading{
+      position: absolute;
+      top: 14%;
+      left: 50%;
+      transform: translateX(-50%);
+}
+.btmtxt{
+      z-index: 3;
+}
+.vdodiv{
+      z-index: 2;
+}
+.vdodiv video{
+      width: 100vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+}
+.marqueecontainer{
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+.vdodiv{
+      clip-path: circle(var(--clip) at 49% 45%);
+}
+.bluelayer{
+      transition: .6s ease;
+}
+.listelem:hover .bluelayer{
+      height: 100%;
+}
+body{
+      transition: background-color ease-out 1.2s;
+}
