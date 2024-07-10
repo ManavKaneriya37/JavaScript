@@ -8,7 +8,6 @@ function App() {
     const [convertedAmount, setConvertedAmount] = useState()
 
     const currencyInfo = useCurrencyInfo(from)
-    const currencyInfo2 = useCurrencyInfo(to)
 
     const options = Object.keys(currencyInfo)
 
